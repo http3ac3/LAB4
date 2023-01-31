@@ -50,10 +50,10 @@
             // 
             // TextTB
             // 
-            this.TextTB.Location = new System.Drawing.Point(183, 10);
+            this.TextTB.Location = new System.Drawing.Point(226, 9);
             this.TextTB.Name = "TextTB";
             this.TextTB.ReadOnly = true;
-            this.TextTB.Size = new System.Drawing.Size(248, 23);
+            this.TextTB.Size = new System.Drawing.Size(293, 27);
             this.TextTB.TabIndex = 0;
             this.TextTB.Text = "КОЛОБОК ПОЛОТЕНЦЕ УВОЛОК ";
             // 
@@ -62,7 +62,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 17);
+            this.label1.Size = new System.Drawing.Size(207, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Текст для шифрования";
             // 
@@ -71,22 +71,22 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 17);
+            this.label2.Size = new System.Drawing.Size(196, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Количество символов";
             // 
             // SymbolsAmount
             // 
-            this.SymbolsAmount.Location = new System.Drawing.Point(182, 42);
+            this.SymbolsAmount.Location = new System.Drawing.Point(226, 42);
             this.SymbolsAmount.Name = "SymbolsAmount";
             this.SymbolsAmount.ReadOnly = true;
-            this.SymbolsAmount.Size = new System.Drawing.Size(74, 23);
+            this.SymbolsAmount.Size = new System.Drawing.Size(124, 27);
             this.SymbolsAmount.TabIndex = 3;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LAB4.Properties.Resources.lab5;
-            this.pictureBox1.Location = new System.Drawing.Point(437, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(534, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 137);
             this.pictureBox1.TabIndex = 4;
@@ -95,9 +95,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(462, 12);
+            this.label3.Location = new System.Drawing.Point(545, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 17);
+            this.label3.Size = new System.Drawing.Size(129, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Перестановки";
             // 
@@ -106,24 +106,24 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(16, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(66, 22);
             this.label4.TabIndex = 6;
             this.label4.Text = "Блок 1";
             // 
             // FirstBlockTB
             // 
-            this.FirstBlockTB.Location = new System.Drawing.Point(74, 84);
+            this.FirstBlockTB.Location = new System.Drawing.Point(88, 84);
             this.FirstBlockTB.Name = "FirstBlockTB";
             this.FirstBlockTB.ReadOnly = true;
-            this.FirstBlockTB.Size = new System.Drawing.Size(74, 23);
+            this.FirstBlockTB.Size = new System.Drawing.Size(86, 27);
             this.FirstBlockTB.TabIndex = 7;
             // 
             // SecondBlockTB
             // 
-            this.SecondBlockTB.Location = new System.Drawing.Point(74, 113);
+            this.SecondBlockTB.Location = new System.Drawing.Point(88, 113);
             this.SecondBlockTB.Name = "SecondBlockTB";
             this.SecondBlockTB.ReadOnly = true;
-            this.SecondBlockTB.Size = new System.Drawing.Size(74, 23);
+            this.SecondBlockTB.Size = new System.Drawing.Size(86, 27);
             this.SecondBlockTB.TabIndex = 9;
             // 
             // label5
@@ -131,16 +131,16 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(16, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 17);
+            this.label5.Size = new System.Drawing.Size(66, 22);
             this.label5.TabIndex = 8;
             this.label5.Text = "Блок 2";
             // 
             // ThirdBlockTB
             // 
-            this.ThirdBlockTB.Location = new System.Drawing.Point(74, 142);
+            this.ThirdBlockTB.Location = new System.Drawing.Point(88, 142);
             this.ThirdBlockTB.Name = "ThirdBlockTB";
             this.ThirdBlockTB.ReadOnly = true;
-            this.ThirdBlockTB.Size = new System.Drawing.Size(74, 23);
+            this.ThirdBlockTB.Size = new System.Drawing.Size(86, 27);
             this.ThirdBlockTB.TabIndex = 11;
             // 
             // label6
@@ -148,16 +148,16 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(16, 145);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 17);
+            this.label6.Size = new System.Drawing.Size(66, 22);
             this.label6.TabIndex = 10;
             this.label6.Text = "Блок 3";
             // 
             // FourthBlockTB
             // 
-            this.FourthBlockTB.Location = new System.Drawing.Point(238, 81);
+            this.FourthBlockTB.Location = new System.Drawing.Point(252, 80);
             this.FourthBlockTB.Name = "FourthBlockTB";
             this.FourthBlockTB.ReadOnly = true;
-            this.FourthBlockTB.Size = new System.Drawing.Size(74, 23);
+            this.FourthBlockTB.Size = new System.Drawing.Size(98, 27);
             this.FourthBlockTB.TabIndex = 13;
             // 
             // label7
@@ -165,16 +165,16 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(180, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.Size = new System.Drawing.Size(66, 22);
             this.label7.TabIndex = 12;
             this.label7.Text = "Блок 4";
             // 
             // FifthBlockTB
             // 
-            this.FifthBlockTB.Location = new System.Drawing.Point(238, 113);
+            this.FifthBlockTB.Location = new System.Drawing.Point(252, 112);
             this.FifthBlockTB.Name = "FifthBlockTB";
             this.FifthBlockTB.ReadOnly = true;
-            this.FifthBlockTB.Size = new System.Drawing.Size(74, 23);
+            this.FifthBlockTB.Size = new System.Drawing.Size(98, 27);
             this.FifthBlockTB.TabIndex = 15;
             // 
             // label8
@@ -182,16 +182,16 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(180, 116);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 17);
+            this.label8.Size = new System.Drawing.Size(66, 22);
             this.label8.TabIndex = 14;
             this.label8.Text = "Блок 5";
             // 
             // CipherButton
             // 
-            this.CipherButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.CipherButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CipherButton.Location = new System.Drawing.Point(182, 145);
             this.CipherButton.Name = "CipherButton";
-            this.CipherButton.Size = new System.Drawing.Size(249, 24);
+            this.CipherButton.Size = new System.Drawing.Size(337, 24);
             this.CipherButton.TabIndex = 16;
             this.CipherButton.Text = "Зашифровать";
             this.CipherButton.UseVisualStyleBackColor = true;
@@ -199,9 +199,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 177);
+            this.ClientSize = new System.Drawing.Size(707, 180);
             this.Controls.Add(this.CipherButton);
             this.Controls.Add(this.FifthBlockTB);
             this.Controls.Add(this.label8);
@@ -220,7 +220,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextTB);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

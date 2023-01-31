@@ -21,13 +21,11 @@ namespace LAB4
 
         private void CipherButton_Click(object sender, EventArgs e)
         {
-
-            
+            string cipheredWord = "";
             foreach (var tb in this.Controls.OfType<TextBox>())
             {
                 if (tb.Text.Length == 5)
                 {
-                    tb.Text = "";
                     char[] oldCharArr = tb.Text.ToCharArray();
                     char[] newCharArr = new char[5];
 
@@ -36,10 +34,15 @@ namespace LAB4
                         newCharArr[i] = oldCharArr[mask[i] - 1];
                     }
 
-                    foreach (var c in newCharArr) 
+                    tb.Text = "";
+                    foreach (var c in newCharArr)
                         tb.Text += c;
                 }
             }
+            
+            cipheredWord += FirstBlockTB.Text + SecondBlockTB.Text + ThirdBlockTB.Text + FourthBlockTB.Text + FifthBlockTB.Text;
+
+            MessageBox.Show("Зашифрованный текст: " + cipheredWord);
         }
 
         private void Form1_Load(object sender, EventArgs e)
