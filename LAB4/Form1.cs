@@ -57,5 +57,18 @@ namespace LAB4
             foreach (var tb in this.Controls.OfType<TextBox>())
                 tb.Text = tb.Text.Replace(' ', '_');
         }
+
+        private void SixCipherButton_Click(object sender, EventArgs e)
+        {
+            string openText = SixOpenTextTB.Text;
+            int[] mask = { 4, 9, 5, 16, 15, 6, 10, 3, 14, 7, 11, 2, 1, 12, 8, 13 };
+            string cipheredText = "";
+            for (int i = 0; i < 16; i++)
+            {
+                SixLettersTable.Controls.Add(new Label() { Text = $"{openText[mask[i] - 1]}" });
+                cipheredText += openText[mask[i] - 1];
+            }
+            MessageBox.Show($"Зашифрованное слово - {cipheredText}");
+        }
     }
 }
