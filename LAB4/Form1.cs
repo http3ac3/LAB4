@@ -22,7 +22,8 @@ namespace LAB4
         private void CipherButton_Click(object sender, EventArgs e)
         {
             string cipheredWord = "";
-            foreach (var tb in this.Controls.OfType<TextBox>())
+
+            foreach (var tb in tabPage1.Controls.OfType<TextBox>())
             {
                 if (tb.Text.Length == 5)
                 {
@@ -32,6 +33,7 @@ namespace LAB4
                     for (int i = 0; i < mask.Length; i++)
                     {
                         newCharArr[i] = oldCharArr[mask[i] - 1];
+                        
                     }
 
                     tb.Text = "";
@@ -54,7 +56,7 @@ namespace LAB4
             FourthBlockTB.Text = TextTB.Text.Substring(15, 5);
             FifthBlockTB.Text = TextTB.Text.Substring(20, 5);
 
-            foreach (var tb in this.Controls.OfType<TextBox>())
+            foreach (var tb in tabPage1.Controls.OfType<TextBox>())
                 tb.Text = tb.Text.Replace(' ', '_');
         }
 
