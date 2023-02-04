@@ -46,17 +46,17 @@
             this.CipherButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.SixCipherButton = new System.Windows.Forms.Button();
+            this.SixLettersTable = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.SixOpenTextTB = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.SixLettersTable = new System.Windows.Forms.TableLayoutPanel();
-            this.SixCipherButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -238,6 +238,15 @@
             this.tabPage1.Text = "Lab 5";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LAB4.Properties.Resources.lab5;
+            this.pictureBox1.Location = new System.Drawing.Point(525, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(159, 137);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.SixCipherButton);
@@ -253,41 +262,16 @@
             this.tabPage2.Text = "Lab 6";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // SixCipherButton
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(207, 22);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Текст для шифрования";
-            // 
-            // SixOpenTextTB
-            // 
-            this.SixOpenTextTB.Location = new System.Drawing.Point(219, 6);
-            this.SixOpenTextTB.Name = "SixOpenTextTB";
-            this.SixOpenTextTB.ReadOnly = true;
-            this.SixOpenTextTB.Size = new System.Drawing.Size(229, 27);
-            this.SixOpenTextTB.TabIndex = 2;
-            this.SixOpenTextTB.Text = "ВРЕМЕНА_МЕНЯЮТСЯ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LAB4.Properties.Resources.lab5;
-            this.pictureBox1.Location = new System.Drawing.Point(525, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 137);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::LAB4.Properties.Resources.Снимок_экрана_2023_02_02_174432;
-            this.pictureBox2.Location = new System.Drawing.Point(454, 44);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(227, 122);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.SixCipherButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.SixCipherButton.Location = new System.Drawing.Point(219, 44);
+            this.SixCipherButton.Name = "SixCipherButton";
+            this.SixCipherButton.Size = new System.Drawing.Size(229, 38);
+            this.SixCipherButton.TabIndex = 17;
+            this.SixCipherButton.Text = "Зашифровать";
+            this.SixCipherButton.UseVisualStyleBackColor = true;
+            this.SixCipherButton.Click += new System.EventHandler(this.SixCipherButton_Click);
             // 
             // SixLettersTable
             // 
@@ -307,16 +291,32 @@
             this.SixLettersTable.Size = new System.Drawing.Size(200, 122);
             this.SixLettersTable.TabIndex = 5;
             // 
-            // SixCipherButton
+            // pictureBox2
             // 
-            this.SixCipherButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.SixCipherButton.Location = new System.Drawing.Point(219, 44);
-            this.SixCipherButton.Name = "SixCipherButton";
-            this.SixCipherButton.Size = new System.Drawing.Size(229, 38);
-            this.SixCipherButton.TabIndex = 17;
-            this.SixCipherButton.Text = "Зашифровать";
-            this.SixCipherButton.UseVisualStyleBackColor = true;
-            this.SixCipherButton.Click += new System.EventHandler(this.SixCipherButton_Click);
+            this.pictureBox2.Image = global::LAB4.Properties.Resources.Снимок_экрана_2023_02_02_174432;
+            this.pictureBox2.Location = new System.Drawing.Point(454, 44);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(227, 122);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(207, 22);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Текст для шифрования";
+            // 
+            // SixOpenTextTB
+            // 
+            this.SixOpenTextTB.Location = new System.Drawing.Point(219, 6);
+            this.SixOpenTextTB.Name = "SixOpenTextTB";
+            this.SixOpenTextTB.ReadOnly = true;
+            this.SixOpenTextTB.Size = new System.Drawing.Size(229, 27);
+            this.SixOpenTextTB.TabIndex = 2;
+            this.SixOpenTextTB.Text = "ВРЕМЕНА_МЕНЯЮТСЯ";
             // 
             // Form1
             // 
@@ -332,9 +332,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
