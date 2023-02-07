@@ -44,7 +44,7 @@ namespace LAB4
             
             cipheredWord += FirstBlockTB.Text + SecondBlockTB.Text + ThirdBlockTB.Text + FourthBlockTB.Text + FifthBlockTB.Text;
 
-            MessageBox.Show("Зашифрованный текст: " + cipheredWord);
+            FifthCipherTB.Text =  cipheredWord;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -71,6 +71,35 @@ namespace LAB4
                 cipheredText += openText[mask[i] - 1];
             }
             MessageBox.Show($"Зашифрованное слово - {cipheredText}");
+        }
+
+        private void DecipherButton_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 4; i++) CipherButton_Click(sender, e);
+        }
+
+        private void SixDecipherButton_Click(object sender, EventArgs e)
+        {
+            string closedText = SixClosedTextTB.Text;
+            int[] mask = { 4, 15, 6, 9, 5, 10, 3, 16, 11, 8, 13, 2, 14, 1, 12, 7};
+            for (int i = 0; i < 16; i++)
+            {
+                var index = Array.IndexOf(mask, i + 1);
+                
+                SixDecipherTable.Controls.Add(new Label() { Text = $"{closedText[index]}" });
+            }
+        }
+
+        private void FifthKolLettersButton_Click(object sender, EventArgs e)
+        {
+            string openText = TextTB.Text;
+            string answer = "";
+            foreach (var let in openText.Distinct().ToArray())
+            {
+                var count = openText.Count(chr => chr == let);
+                answer += $"Символ {let} >> {count}\n";
+            }
+            MessageBox.Show(answer);
         }
     }
 }
